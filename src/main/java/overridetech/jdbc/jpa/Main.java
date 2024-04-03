@@ -1,14 +1,16 @@
 package overridetech.jdbc.jpa;
 
 import overridetech.jdbc.jpa.model.User;
-import overridetech.jdbc.jpa.service.UserServiceImpl;
+import overridetech.jdbc.jpa.service.UserServiceHibernateimpl;
+import overridetech.jdbc.jpa.service.UserServiceJDBSImpl;
 
 import java.sql.SQLException;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
-        UserServiceImpl userService = new UserServiceImpl();
+        UserServiceJDBSImpl userService = new UserServiceJDBSImpl();
+//        UserServiceHibernateimpl userService = new UserServiceJDBSImpl();
         userService.createUsersTable();
         userService.saveUser("Ivan", "Ivanov", (byte) 25);
         userService.saveUser("Petr", "Petrov", (byte) 26);

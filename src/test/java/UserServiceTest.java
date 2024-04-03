@@ -1,13 +1,13 @@
 import overridetech.jdbc.jpa.model.User;
 import overridetech.jdbc.jpa.service.UserService;
-import overridetech.jdbc.jpa.service.UserServiceImpl;
+import overridetech.jdbc.jpa.service.UserServiceJDBSImpl;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
 
 public class UserServiceTest {
-    private final UserService userService = new UserServiceImpl();
+    private final UserService userService = new UserServiceJDBSImpl();
 
     private final String testName = "Ivan";
     private final String testLastName = "Ivanov";
