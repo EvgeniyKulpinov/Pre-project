@@ -2,7 +2,6 @@ package overridetech.jdbc.jpa;
 
 import overridetech.jdbc.jpa.model.User;
 import overridetech.jdbc.jpa.service.UserService;
-import overridetech.jdbc.jpa.service.UserServiceHibernateimpl;
 import overridetech.jdbc.jpa.service.UserServiceJDBSImpl;
 
 import java.sql.SQLException;
